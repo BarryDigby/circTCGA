@@ -1,0 +1,20 @@
+name: scRNA
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+- python=2.7
+- circexplorer2
+- pip
+- pysam
+- numpy 
+- scipy
+- pandas 
+- docopt
+- pybedtools
+- star 
+- cufflinks
+- tophat
+- bedtools
+- ucsc-genepredtogtf
+- ucsc-gtftogenepred
