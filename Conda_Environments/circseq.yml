@@ -3,7 +3,7 @@ channels:
  - conda-forge
  - bioconda
  - faircloth-lab
- dependencies:
+dependencies:
  - python=2.7
  - bowtie2
  - bedtools
