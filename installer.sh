@@ -8,4 +8,8 @@ conda env create -f Conda_Environments/circexplorer2.yml
 
 singularity pull docker://barryd237/picard
 
-singularity pull docker://barryd237/CIRIquant_v1.0.1
+singularity pull docker://barryd237/ciriquant_v1.0.1
+
+mkdir -p containers
+
+mv *.simg containers/
