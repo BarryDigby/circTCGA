@@ -1,0 +1,14 @@
+name: circseq
+channels:
+ - conda-forge
+ - bioconda
+ - faircloth-lab
+ dependencies:
+ - python=2.7
+ - bowtie2
+ - bedtools
+ - blat 
+ - samtools=0.1.19
+ - pip
+ - numpy 
+ - pysam 
