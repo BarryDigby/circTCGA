@@ -1,4 +1,4 @@
-name: scRNA
+name: circexplorer2
 channels:
  - conda-forge
  - bioconda
