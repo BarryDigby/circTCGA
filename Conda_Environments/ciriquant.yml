@@ -1,0 +1,21 @@
+name: ciriquant
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+ - python=2.7
+ - samtools>=1.9
+ - bwa
+ - hisat2 
+ - stringtie
+ - pip  
+ - git
+ - pip:
+   - git+https://github.com/Kevinzjy/CIRIquant.git
+   - numexpr==2.6.9
+   - numpy==1.16.4
+   - pysam==0.15.2
+   - PyYAML==5.1.1
+   - scikit-learn==0.20.3
+   - scipy==1.2.2
+   - argparse==1.2.1

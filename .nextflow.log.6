@@ -1,0 +1,49 @@
+Mar-26 12:40:28.937 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ull.nf
+Mar-26 12:40:29.035 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.10.0
+Mar-26 12:40:29.045 [main] INFO  nextflow.cli.CmdRun - Launching `ull.nf` [magical_shannon] - revision: 7756407b84
+Mar-26 12:40:29.067 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/barry/.nextflow/config
+Mar-26 12:40:29.069 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/barry/.nextflow/config
+Mar-26 12:40:29.106 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-26 12:40:29.473 [main] DEBUG nextflow.extension.OperatorEx - Dataflow extension methods: branch,buffer,chain,choice,collate,collect,collectFile,combine,concat,count,countBy,countFasta,countFastq,countLines,countText,cross,distinct,filter,first,flatMap,flatten,fork,groupBy,groupTuple,ifEmpty,into,join,last,map,max,mean,merge,min,mix,phase,print,println,randomSample,reduce,separate,set,splitCsv,splitFasta,splitFastq,splitText,spread,subscribe,sum,take,tap,toDouble,toFloat,toInteger,toList,toLong,toSortedList,transpose,unique,until,view
+Mar-26 12:40:29.480 [main] DEBUG nextflow.Session - Session uuid: 9aa2cb22-16c5-4934-8a87-3f51e0c23206
+Mar-26 12:40:29.480 [main] DEBUG nextflow.Session - Run name: magical_shannon
+Mar-26 12:40:29.480 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-26 12:40:29.508 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.10.0 build 5170
+  Created: 21-10-2019 15:07 UTC (16:07 BST)
+  System: Linux 5.3.0-42-generic
+  Runtime: Groovy 2.5.8 on OpenJDK 64-Bit Server VM 11.0.6+10-post-Ubuntu-1ubuntu118.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 28488@NUIG [127.0.1.1]
+  CPUs: 8 - Mem: 31.2 GB (1.9 GB) - Swap: 2 GB (1.7 GB)
+Mar-26 12:40:29.527 [main] DEBUG nextflow.Session - Work-dir: /home/barry/Desktop/circTCGA/work [ext2/ext3]
+Mar-26 12:40:29.528 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/barry/Desktop/circTCGA/bin
+Mar-26 12:40:29.543 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-26 12:40:29.545 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-26 12:40:29.705 [main] DEBUG nextflow.Session - Session start invoked
+Mar-26 12:40:29.846 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-26 12:40:29.921 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-26 12:40:29.921 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-26 12:40:29.926 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-26 12:40:29.930 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=31.2 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-26 12:40:30.014 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > CS_dl -- maxForks: 8
+Mar-26 12:40:30.058 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-26 12:40:30.058 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-26 12:40:30.059 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > CQ_dl -- maxForks: 8
+Mar-26 12:40:30.062 [main] DEBUG nextflow.script.BaseScript - No entry workflow defined
+Mar-26 12:40:30.063 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-26 12:40:30.063 [main] DEBUG nextflow.Session - Session await
+Mar-26 12:40:30.207 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-26 12:40:30.214 [Task submitter] INFO  nextflow.Session - [a6/622b46] Submitted process > CS_dl
+Mar-26 12:40:30.225 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-26 12:40:30.226 [Task submitter] INFO  nextflow.Session - [0b/619136] Submitted process > CQ_dl
+Mar-26 12:41:17.679 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Mar-26 12:41:17.718 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-26 12:41:17.718 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-26 12:41:17.725 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (2)
+Mar-26 12:41:17.734 [main] DEBUG nextflow.executor.LocalTaskHandler - Unable to kill CS_dl -- command: kill -TERM 28578; exit: 1 
+ bash: line 0: kill: (28578) - No such process
+
+Mar-26 12:41:17.741 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=0; failedCount=2; ignoredCount=0; cachedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms]
+Mar-26 12:41:17.839 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-26 12:41:17.856 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
