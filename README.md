@@ -11,3 +11,12 @@ Despite `CIRIquant` using gencode as a reference genome for their tutorial, I wi
 * `circexplorer2`: Utilises the `fetch_ucsc.py` script. Requires a genome fasta, annotations in text and GTF format. 
 
 Try and figure out which step needs `hg19.fa.fai`, as it is created in the dir.  
+
+### Script 2 (index.sh)
+Bash script to make directories and perform genome indexing using the following tools:
+* `bowtie`
+* `bowtie2`
+* `STAR`
+* `hisat2`
+* `bwa`
+* `samtools` (made in previous script) 
