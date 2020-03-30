@@ -21,7 +21,7 @@ Bash script to make directories and perform genome indexing using the following 
 * `bwa`
 * `samtools` (made in previous script) 
 
-### Script 3 (bam_to_fastq)
+### Script 3 (bam_to_fastq.sh)
 Simple script using `picard.jar SamToFastq` to convert TCGA bams to fastq pairs. Crucial that you include `VALIDATION_STRINGENCY=LENIENT`. 
 
 * **future work** add picard to an environment so that no manual installation is required. 
