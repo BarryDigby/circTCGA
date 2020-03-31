@@ -6,6 +6,8 @@ Despite `CIRIquant` using gencode as a reference genome for their tutorial, I wi
 
 * `circseq`: circseq requires a hg19.fa file, a hg19.2bit file and the intron and exon boundaries in hg19. The former 2 are available at the ftp site at UCSC (see [here](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/)). The latter files have been prepared by the folks at the Mayo Clinic and are available for downaload at the following [link](http://bioinformaticstools.mayo.edu/downloads/circRNA/CircSeq_ref_files.tgz). One thing that catches users out is that the user manual for `circseq` recommends concatenating every fasta file from `chromFa.tar.gz` i.e `cat *.fa > hg19.fa`. Doing this will include the haplotype files. Further down the line, `find_circ.py` will look for individual chromosome files that are present in hg19.fa. Thus, it is advisable (in my case) to delete the haplotype files, then concatenate the remaining files into hg19.fa. Be sure to leave the individual chromosome files in the directory.
 
+Once the `circseq` environment has been configured, install circseq scripts via this link http://bioinformaticstools.mayo.edu/downloads/circRNA/CircSeq_standalone.tgz. Save to conda environment bin
+
 * `CIRIquant`: Requires a genome fasta file and a GTF file. May have to resort to gencode due to tools parsing scripts. 
 
 * `circexplorer2`: Utilises the `fetch_ucsc.py` script. Requires a genome fasta, annotations in text and GTF format. 
