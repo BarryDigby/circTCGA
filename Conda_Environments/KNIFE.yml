@@ -4,7 +4,7 @@ channels:
  - bioconda
  - yuxiang
  - biobuilds
- dependencies:
+dependencies:
  - python=2.7
  - bowtie2=2.2.2
  - bowtie=1.1.2
