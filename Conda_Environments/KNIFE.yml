@@ -14,6 +14,3 @@ dependencies:
  - scipy
  - r-base
  - samtools
- # Junction IDX deps:
- - bcbio-gff
- - biopython
