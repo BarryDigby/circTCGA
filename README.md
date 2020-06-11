@@ -1,5 +1,11 @@
 # circTCGA
-Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts are prepared. 
+Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts are prepared. Take me to [pookie](#pookie) 
+
+#### Requirements
+`nextflow` and `anaconda` must be installed to run the pipeline [1]. To make anaconda environments compatible with nextflow on a HPC, add the path of anaconda to your `~/.bashrc` e.g: `export PATH="/home/bdigby/Anaconda3/4.4.0/bin/:$PATH"`. 
+
+
+
 
 ### Downloading Prerequisite files
 CircRNA tools are extremely selective about which reference genome and annotation files are supplied! However it seems that the field of circRNA was built on hg19, specifically UCSC and gencode. Thus, this section provides a breakdown of the files required for each tool:
@@ -27,3 +33,5 @@ Simple script using `picard.jar SamToFastq` to convert TCGA bams to fastq pairs.
 * **future work** add picard to an environment so that no manual installation is required. 
 
 KNIFE requires data.table manual install
+
+<a name="pookie"></a>
