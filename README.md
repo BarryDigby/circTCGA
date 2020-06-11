@@ -34,4 +34,5 @@ Simple script using `picard.jar SamToFastq` to convert TCGA bams to fastq pairs.
 
 KNIFE requires data.table manual install
 
-<a name="pookie"></a>
+
+<a name="pookie">1</a>: Footnote content goes here
