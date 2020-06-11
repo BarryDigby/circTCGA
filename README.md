@@ -1,8 +1,8 @@
 # circTCGA
-Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts are prepared. Take me to [pookie](#pookie) 
+Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts are prepared. 
 
 #### Requirements
-`nextflow` and `anaconda` must be installed to run the pipeline [1]. To make anaconda environments compatible with nextflow on a HPC, add the path of anaconda to your `~/.bashrc` e.g: `export PATH="/home/bdigby/Anaconda3/4.4.0/bin/:$PATH"`. 
+`nextflow` and `anaconda` must be installed to run the pipeline [1](#1). To make anaconda environments compatible with nextflow on a HPC, add the path of anaconda to your `~/.bashrc` e.g: `export PATH="/home/bdigby/Anaconda3/4.4.0/bin/:$PATH"`. 
 
 
 
@@ -35,4 +35,4 @@ Simple script using `picard.jar SamToFastq` to convert TCGA bams to fastq pairs.
 KNIFE requires data.table manual install
 
 
-<a name="pookie">1</a>: Footnote content goes here
+<a name="1">1</a>: To make anaconda environments compatible with nextflow on a HPC, add the path of anaconda to your `~/.bashrc` e.g: `export PATH="/home/bdigby/Anaconda3/4.4.0/bin/:$PATH"`
