@@ -5,6 +5,8 @@ Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts
 `nextflow` and `anaconda` must be installed to run the pipeline [1](#1). 
 
 #### Scripts
+* **install_environments.nf**: creates conda envrionments required for the analysis
+
 * **process_bams.nf**: converts TCGA bam files to fastq pairs using `picard`. Performs QC and subsequent adaptor / Phred score filtering using `bbduk.sh`. Final QC performed on cleaned reads. 
 
 * **download_files.nf**: downloads the hg19 genome along with annotation files required for the analysis [2](#2).
