@@ -13,6 +13,8 @@ Scan TCGA sequencing data for circRNAs. Readme is collection of notes as scripts
 
 * **create_indices.nf**: creates genome index files for 5 aligners.
 
+* **circRNA.nf**: implements CIRIquant, Circexplorer2 (BWA + STAR) and CircSeq circRNA prediciton tools to discovered circRNA's in TCGA data. 
+
 <a name="1">1</a>: To run the pipeline on a HPC, you must make anaconda compatible with nextflow in order to use the compiled environments. Add the anaconda bin to your PATH via ~/.bashrc e.g : `export PATH="/home/bdigby/Anaconda3/4.4.0/bin/:$PATH"`.
 
 <a name="2">2</a>: Haplotype files are removed from the reference genome during this step. 
