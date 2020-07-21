@@ -1,0 +1,10 @@
+name: pre-process
+channels:
+ - bioconda
+ - agbiome
+dependencies:
+ - picard
+ - bbtools
+ - fastqc
+ - multiqc
+
